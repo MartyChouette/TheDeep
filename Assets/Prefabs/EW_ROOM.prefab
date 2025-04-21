@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5729190334748101131}
+  - component: {fileID: 4265699333779711427}
   m_Layer: 0
   m_Name: EW_ROOM
   m_TagString: Untagged
@@ -32,6 +33,28 @@ Transform:
   - {fileID: 6430459083341573977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4265699333779711427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219016346872451350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1f69925109abd4abe3ef6b65d27b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasNorthExit: 1
+  hasSouthExit: 1
+  hasWestExit: 0
+  hasEastExit: 0
+  hasNSPath: 1
+  hasNWPath: 1
+  hasNEPath: 1
+  hasSWPath: 1
+  hasSEPath: 1
+  hasEWPath: 0
 --- !u!1001 &6824973281880131762
 PrefabInstance:
   m_ObjectHideFlags: 0
