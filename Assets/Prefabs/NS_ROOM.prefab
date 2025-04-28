@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8453335933046116417}
+  - component: {fileID: 2916775836272890196}
   m_Layer: 0
   m_Name: NS_ROOM
   m_TagString: Untagged
@@ -25,13 +26,35 @@ Transform:
   m_GameObject: {fileID: 432415541582585102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.2, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5622787770276519463}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2916775836272890196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432415541582585102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1f69925109abd4abe3ef6b65d27b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasNorthExit: 0
+  hasSouthExit: 0
+  hasWestExit: 1
+  hasEastExit: 1
+  hasNSPath: 0
+  hasNWPath: 1
+  hasNEPath: 1
+  hasSWPath: 1
+  hasSEPath: 1
+  hasEWPath: 1
 --- !u!1001 &5296970740011334092
 PrefabInstance:
   m_ObjectHideFlags: 0

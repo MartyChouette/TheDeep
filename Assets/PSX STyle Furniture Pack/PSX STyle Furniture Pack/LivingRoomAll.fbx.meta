@@ -1,0 +1,387 @@
+fileFormatVersion: 2
+guid: 51a276a2b4732b54488f02776a82564a
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armchair_Leather.001
+    second: {fileID: 2100000, guid: cdcfd73df07e14f48a9a6bfcdafed0cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Armchair_Wood.001
+    second: {fileID: 2100000, guid: d1b3450bbee4422448aa03a00ef6aad2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlueCouch
+    second: {fileID: 2100000, guid: bef6dd57520e14944a0315650aa93a16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet
+    second: {fileID: 2100000, guid: 96dfacb7f62976b4aafa4b3c7dbc1faf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinet.001
+    second: {fileID: 2100000, guid: fca33e06b7267594eb7c75d2ce980ab0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CabinetDoorL
+    second: {fileID: 2100000, guid: 411ccdea25aa3d047bd087a6b9c5cf23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CabinetDoorL.001
+    second: {fileID: 2100000, guid: a69d68d23c4c97540a65b104273a3dac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CabinetDoorR
+    second: {fileID: 2100000, guid: bd7b66ecea6de28458bb5752d53ab4f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CabinetDoorR.001
+    second: {fileID: 2100000, guid: a658001a7cb757f458e22353c33fa81a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CoffeTable_Wooden
+    second: {fileID: 2100000, guid: 1d3776674cdb1d34bbe5d570a853aca9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door1
+    second: {fileID: 2100000, guid: 39578cf78fac62549840554a72deb952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door2
+    second: {fileID: 2100000, guid: 128e7d57b517c544c90256fa94d32e5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door3.002
+    second: {fileID: 2100000, guid: 073e8d0a8cbeadb4a806489ba4f0a451, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LargeTVUnit
+    second: {fileID: 2100000, guid: c280797e6b606bb4f89c66816b5ea05d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 26aea387442a80a42a39f85108930ece, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: dee494f1c9625594c818cc7e120e6422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 526f3fe800517dd4bb502195ad885db1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 93f632106cf886142a14dd480c060363, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: 7969bd0668ac5624e98ee0fc1cfe4fc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.006
+    second: {fileID: 2100000, guid: ed07023df2808f04c978c95674b311d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 3cd1aee94307df643837cbefd14c8b5d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.012
+    second: {fileID: 2100000, guid: ba90c1529433b4f43b4ab71852bc2aa3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs
+    second: {fileID: 2100000, guid: 9262a2439bbbf5845bf1260096cff3d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs.001
+    second: {fileID: 2100000, guid: 51c933e9c48c3a04f85d440c2d01dd81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs.002
+    second: {fileID: 2100000, guid: 298c1ab5afb4d7a4a92b8c35236f3719, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs.003
+    second: {fileID: 2100000, guid: 7cba573f73c025e4bb9b6dca5cf9dcc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs.006
+    second: {fileID: 2100000, guid: 5ba5303da9f4b78488ead3aab05464fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OttomanLegs.007
+    second: {fileID: 2100000, guid: b6acb3ec846aeb14685b9d792887ff02, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ottoman_Blue
+    second: {fileID: 2100000, guid: afb3bf21fd1ef3b4f815afb8823eccfe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ottoman_Grey
+    second: {fileID: 2100000, guid: 02e2b6c438bb98d42b0f66c0730fe506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ottoman_Red
+    second: {fileID: 2100000, guid: ab129c724862cb64382cce18f1e22c4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedCouch.001
+    second: {fileID: 2100000, guid: 5bbcf6aa26efe4e47bc81099e100e013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedCushion
+    second: {fileID: 2100000, guid: c2f2b971434528440bb622744e57521f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StandingTV
+    second: {fileID: 2100000, guid: 2cf8af330e8cc9448a592789017dd85c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StandingTable
+    second: {fileID: 2100000, guid: 04047c7cf1491dc42a60585f13e81714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TVCabinet
+    second: {fileID: 2100000, guid: ca1c7ec1e83a0ca4a844a9ce82196b7a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodenBase
+    second: {fileID: 2100000, guid: 7a32890df44e6ca43801903cb5f87048, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodenBaseLight.001
+    second: {fileID: 2100000, guid: 06392ba2fb8cf6c469327e34f7f51884, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodenChair_CushionOrange
+    second: {fileID: 2100000, guid: 5f55575bebba01e42b57068a261d9ba5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Coardboard Box
+    second: {fileID: 2800000, guid: f8a5cb68ba2a491438a38e6eb0728240, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: FabricCouch2
+    second: {fileID: 2800000, guid: bf8313a249a834e4fac3d002edce9a23, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: LargeTVUnit
+    second: {fileID: 2800000, guid: 717357cecb7f0ce439c1b05045d35617, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ottoman
+    second: {fileID: 2800000, guid: 37e92ed5e341be94e88597b245c68a0c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ottoman_Blue
+    second: {fileID: 2800000, guid: 4c99d30ed40bd1742ba2b8e13e81154d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ottoman_Red
+    second: {fileID: 2800000, guid: cc9dd256b614af045b3a92d0d1ba2048, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TV Cabinet
+    second: {fileID: 2800000, guid: ac834a1a7c906d1469e5ed1c0ceecd2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TV Unit
+    second: {fileID: 2800000, guid: a62c3936f6b535249b69772e39b1c041, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: black-walnut-medieval
+    second: {fileID: 2800000, guid: 5e5b843693d4936459c5710e83528cf1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: black-walnut-medieval - Copy
+    second: {fileID: 2800000, guid: d14a5a0c0dbc45a4cb8e6e76aec43246, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chair
+    second: {fileID: 2800000, guid: ec6aa63e5e542e74aa3734126957b518, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chair - Copy
+    second: {fileID: 2800000, guid: bca0c57b37142ee40b765057d8333a25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dark-stained-timber
+    second: {fileID: 2800000, guid: 8a4b984ce39668f488e01801b6c7d82c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lEATHER
+    second: {fileID: 2800000, guid: 7e54fc529cef64b4d93766a807daedaa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: modern-wood-coffee-table
+    second: {fileID: 2800000, guid: e216a7fca9722d34ab21671eb8fa2fc1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sna1
+    second: {fileID: 2800000, guid: 3b725773c5916c24982d3c73742ce489, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tv
+    second: {fileID: 2800000, guid: 9e315e9442d8ae648b3fcedc7540780f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
