@@ -48,10 +48,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3931662774567949673, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef961c28b591a864ea01b8146407c00c, type: 2}
+    - target: {fileID: -2450849009015537254, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef961c28b591a864ea01b8146407c00c, type: 2}
+    - target: {fileID: -760013947482335, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef961c28b591a864ea01b8146407c00c, type: 2}
     - target: {fileID: 919132149155446097, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
       propertyPath: m_Name
       value: 1_no_holefloor_room_1_door
       objectReference: {fileID: 0}
+    - target: {fileID: 3896294155803048942, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef961c28b591a864ea01b8146407c00c, type: 2}
+    - target: {fileID: 6536732689640091996, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 94b28bb1298083747844d05c7ae0305d, type: 2}
+    - target: {fileID: 9207149358205837963, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef961c28b591a864ea01b8146407c00c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
