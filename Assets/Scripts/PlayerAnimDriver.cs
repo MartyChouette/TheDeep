@@ -1,13 +1,19 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(Animator), typeof(CharacterController))]
 public class PlayerAnimDriver : MonoBehaviour
 {
-    public float walkSpeed = 2f;     // tweak to match animation speed
-    public float runSpeed = 4f;
+    // Small velocities under this count as idle (m/s)
+    [Tooltip("Small velocities under this count as idle (m/s).")]
+    [SerializeField] float idleCutoff = 0.05f;
+
+    // Walk speed cap when not sprinting (m/s)
+    [Tooltip("Walk speed in m/s (used to cap speed when not sprinting).")]
+    [SerializeField] float walkMax = 2.9f;
 
     Animator anim;
-    CharacterController cc;          // or use your own movement script
+    CharacterController cc;
+    bool crouch;
 
     void Awake()
     {
@@ -17,25 +23,28 @@ public class PlayerAnimDriver : MonoBehaviour
 
     void Update()
     {
-        // ?? movement magnitude ???????????????????????????????
-        Vector3 vel = new Vector3(cc.velocity.x, 0, cc.velocity.z);
-        float speed = vel.magnitude;
+        // Toggle crouch on C key press
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            crouch = !crouch;
+            anim.SetBool("Crouch", crouch);
+        }
+    }
 
-        // Scale into 0?1 (walk) and >1 (run).  Assumes
-        //   walkSpeed == average magnitude while walking,
-        //   runSpeed  == average magnitude while running.
-        float norm = 0;
-        if (speed > 0.01f)           // ignore micro jitter
-            norm = Mathf.InverseLerp(0, walkSpeed, speed); // 0 -1 for walk
-        if (Input.GetKey(KeyCode.LeftShift))
-            norm = Mathf.InverseLerp(walkSpeed, runSpeed, speed) + 1f;
+    void LateUpdate()   // run after movement has updated
+    {
+        Vector3 v = cc.velocity;
+        v.y = 0;                           // ignore vertical
+        float speed = v.magnitude;         // ground speed
 
-        anim.SetFloat("Speed", norm);
+        // Treat tiny drift as zero
+        if (speed < idleCutoff)
+            speed = 0f;
 
-        // ?? crouch ???????????????????????????????????????????
-        anim.SetBool("Crouch", Input.GetKey(KeyCode.C));
+        // Cap speed at walkMax unless sprinting
+        if (!Input.GetKey(KeyCode.LeftShift))
+            speed = Mathf.Min(speed, walkMax);
 
-        // ?? rope climb (placeholder) ?????????????????????????
-        // anim.SetBool("Climb", onRope);  // set this when you implement ropes
+        anim.SetFloat("Speed", speed);
     }
 }
