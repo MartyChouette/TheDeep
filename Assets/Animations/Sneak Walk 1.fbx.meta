@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dfaec7bd01484df4a9689b2d23007526
+guid: d93c587041bd0a349857e8e358993991
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -31,48 +31,19 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature_Blender_Michelle|Relaxed
-      takeName: Armature_Blender_Michelle|Relaxed
-      internalID: -1950107174939060344
+      name: mixamo.com (1)
+      takeName: mixamo.com
+      internalID: -8183224268752077907
       firstFrame: 0
-      lastFrame: 60
+      lastFrame: 0
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature_Blender_Michelle|T-Pose
-      takeName: Armature_Blender_Michelle|T-Pose
-      internalID: -7844223902085632479
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -91,16 +62,16 @@ ModelImporter:
     - serializedVersion: 16
       name: mixamo.com
       takeName: mixamo.com
-      internalID: -203655887218126122
+      internalID: 8776628177589695351
       firstFrame: 0
-      lastFrame: 86
+      lastFrame: 0
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -118,11 +89,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: mixamo.com (1)
+      name: mixamo.com (2)
       takeName: mixamo.com
-      internalID: -8183224268752077907
+      internalID: -5008172688485983864
       firstFrame: 0
-      lastFrame: 0
+      lastFrame: 86
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -41,6 +41,7 @@ public class CharacterMovement : MonoBehaviour
     bool inputJump;
     bool inputCrouch;
     bool inputSprint;
+    public float speed = 3f;   // meters per second
 
     Animator animator;
     CharacterController cc;
@@ -80,21 +81,21 @@ public class CharacterMovement : MonoBehaviour
 
             // Crouch
             // Note: The crouch animation does not shrink the character's collider
-            animator.SetBool("crouch", isCrouching);
+            animator.SetBool("Crouch", isCrouching);
 
             // Run
             float minimumSpeed = 0.9f;
-            animator.SetBool("run", cc.velocity.magnitude > minimumSpeed);
+            //animator.SetBool("run", cc.velocity.magnitude > minimumSpeed);
 
             // Sprint
             isSprinting = cc.velocity.magnitude > minimumSpeed && inputSprint;
-            animator.SetBool("sprint", isSprinting);
+            //animator.SetBool("sprint", isSprinting);
 
         }
 
         // Jump animation
         if (animator != null)
-            animator.SetBool("air", cc.isGrounded == false);
+            //animator.SetBool("air", cc.isGrounded == false);
 
         // Handle can jump or not
         if (inputJump && cc.isGrounded)
@@ -176,6 +177,20 @@ public class CharacterMovement : MonoBehaviour
 
         Vector3 moviment = verticalDirection + horizontalDirection;
         cc.Move(moviment);
+
+        // Input.GetAxisRaw returns -1, 0, or +1 for the Vertical axis (W/S or Up/Down)
+        float input = Input.GetAxisRaw("Vertical");
+
+        if (input != 0f)
+        {
+            Vector3 delta = Vector3.up * input * speed * Time.deltaTime;
+            transform.Translate(delta, Space.World);
+            //animator.SetBool("Climb", true);             // playing climb animation
+        }
+        else
+        {
+            //animator.SetBool("Climb", false);            // idle / not climbing
+        }
 
     }
 
