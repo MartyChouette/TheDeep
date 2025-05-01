@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyMovement : MonoBehaviour
 {
@@ -10,9 +11,13 @@ public class EnemyMovement : MonoBehaviour
 
     public Rigidbody rb;
 
+    public string currentSceneName;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentSceneName = SceneManager.GetActiveScene().name;
+
         rb = gameObject.GetComponent<Rigidbody>();
         playerObj = GameObject.Find("Player");
         Debug.Log("playerObj: " + playerObj);
@@ -46,6 +51,15 @@ public class EnemyMovement : MonoBehaviour
         // }
 
         // rb.MovePosition(newPos);
-        
+
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Game Over");
+            SceneManager.LoadScene(currentSceneName);
+        }
     }
 }

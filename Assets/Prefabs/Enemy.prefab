@@ -50,8 +50,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 20
-  moveSpeed: 10
+  detectionRadius: 15
+  moveSpeed: 5
   rb: {fileID: 0}
 --- !u!54 &8520179428246274974
 Rigidbody:
