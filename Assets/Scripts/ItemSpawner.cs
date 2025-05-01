@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    public float chanceToDelete = .4f;
+    float chanceToDelete = .4f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        float randomDeletePercentage = Random.Range(0, .8f);
+        float randomDeletePercentage = Random.Range(0, 1);
 
         if (randomDeletePercentage > chanceToDelete)
         {

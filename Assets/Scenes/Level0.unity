@@ -410,8 +410,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs:
-  - {fileID: 6697899907396473842, guid: 5aa7c836472293f43aa0d1f9b3939a50, type: 3}
-  - {fileID: 5009204983632747116, guid: abf62636e2ec9e546a70650cad1a444b, type: 3}
+  - {fileID: 8415489239338345114, guid: 48482d797cdf22e438193faf532c2011, type: 3}
+  - {fileID: 7242579185201954629, guid: d70a28b10d6f0bd44ae9089d355fa2b2, type: 3}
+  - {fileID: -4203796869648400805, guid: 11876b1b00962be4cb653037fa0ecc4f, type: 3}
   startRoom: {fileID: 6697899907396473842, guid: 5aa7c836472293f43aa0d1f9b3939a50, type: 3}
   finishRoom: {fileID: 5009204983632747116, guid: abf62636e2ec9e546a70650cad1a444b, type: 3}
 --- !u!1 &830466222
@@ -740,7 +741,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350193017}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.012270831, y: 0.019030876, z: -0.00023358455, w: 0.9997436}
+  m_LocalRotation: {x: 0.012270358, y: 0.020955617, z: -0.00025720877, w: 0.9997051}
   m_LocalPosition: {x: 0.08296001, y: 4.195, z: -5.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -872,7 +873,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557609752}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.012270831, y: 0.019030876, z: -0.00023358455, w: 0.9997436}
+  m_LocalRotation: {x: 0.012270358, y: 0.020955617, z: -0.00025720877, w: 0.9997051}
   m_LocalPosition: {x: 0.08296001, y: 4.195, z: -5.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
