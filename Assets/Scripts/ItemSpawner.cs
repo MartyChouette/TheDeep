@@ -2,22 +2,26 @@ using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    float chanceToDelete = .4f;
+    [Range(0f, 1f)]
+    private float deleteProbability = 0.75f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    void Awake()
     {
-        float randomDeletePercentage = Random.Range(0, 1);
-
-        if (randomDeletePercentage > chanceToDelete)
-        {
-            Destroy(gameObject);
-        }
+        TryDeleteSelf();
+    }
+    void Start()       // or OnEnable() if the object can be toggled
+    {
+       
     }
 
-    // Update is called once per frame
-    void Update()
+
+    void TryDeleteSelf()
     {
-        
+        float roll = Random.value;              // 0.0–1.0 inclusive
+        Debug.Log($"{name}: roll={roll:F2}, p={deleteProbability:F2}");
+
+        if (roll < deleteProbability)           // 40 % chance by default
+            Destroy(gameObject);                // goodbye!
     }
 }
