@@ -259,7 +259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leftConnector: 0
   _rightConnector: 0
-  _upConnector: 0
+  _upConnector: 1
   _downConnector: 0
   _frontConnector: 0
   _backConnector: 0

@@ -3120,6 +3120,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 1_no_holefloor_room_2_door
       objectReference: {fileID: 0}
+    - target: {fileID: 3896294155803048942, guid: ae813eed25a09f345b5b1bd28a05ae6c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f43f9bfbca83ae44b03bb12868d1855, type: 2}
     - target: {fileID: 6536732689640091996, guid: ae813eed25a09f345b5b1bd28a05ae6c, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
