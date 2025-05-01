@@ -100,4 +100,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2295952b8ec07534fb82b201d9220d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToDelete: 0.4
