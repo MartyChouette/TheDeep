@@ -53,7 +53,7 @@ MonoBehaviour:
     m_Bits: 64
   detectionRadius: 11
   moveSpeed: 5
-  rb: {fileID: 0}
+  rb: {fileID: 8520179428246274974}
   currentSceneName: 
 --- !u!54 &8520179428246274974
 Rigidbody:
@@ -101,8 +101,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.99142
+  m_Center: {x: -0.023963451, y: 0.009655952, z: 0.021372557}
 --- !u!1 &5753028759253155781
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,7 +207,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}

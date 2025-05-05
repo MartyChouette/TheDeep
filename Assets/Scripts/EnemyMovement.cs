@@ -61,5 +61,9 @@ public class EnemyMovement : MonoBehaviour
             Debug.Log("Game Over");
             SceneManager.LoadScene(currentSceneName);
         }
+        // else if (collision.gameObject.CompareTag("Wall"))
+        // {
+        //     Debug.Log("hit wall");
+        // }
     }
 }
