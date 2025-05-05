@@ -5,13 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class Task2Generator : MonoBehaviour
 {
+
+    [Header("Generation settings")]
+    [SerializeField, Min(1)] int maxAttempts = 50;
+
+
     // 3D grid dimensions
+   
     const int GRID_WIDTH = 5;
     const int GRID_HEIGHT = 3;
     const int GRID_DEPTH = 4;
-    const int MAX_TRIES = 50;
 
-    
+    // You already have this – it now controls the retry loop too
+    const int MAX_TRIES = 50;     // set to whatever you like
+
+
+
     [SerializeField] List<RoomPiece> roomPrefabs;
 
     // the start and finish rooms (contain player in start and enemy at finish)
@@ -26,28 +35,39 @@ public class Task2Generator : MonoBehaviour
 
     // cache calculated sizes for prefabs
     Dictionary<RoomPiece, Vector3> _prefabSizeCache = new Dictionary<RoomPiece, Vector3>();
+    List<GameObject> spawnedRooms = new List<GameObject>();
+
 
     void Start()
     {
         CalculateGlobalCellSize();
 
-        int tries = 0;
-        bool result;
-        do
-        {
-            tries++;
-            result = RunWFC();
-        } while (!result && tries < MAX_TRIES);
+        bool success = false;
 
-        if (!result)
+        for (int attempt = 1; attempt <= MAX_TRIES; attempt++)
         {
-            Debug.Log("Unable to solve wave function collapse after " + tries + " tries.");
+            try
+            {
+                if (RunWFC())
+                {
+                    DrawRooms();            // will throw if an index is bad
+                    Debug.Log($"Level generated on attempt #{attempt}");
+                    success = true;
+                    break;
+                }
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogWarning($"Attempt #{attempt} failed: {e.Message}");
+            }
+
+            ClearSpawnedRooms();            // wipe any partial level before retrying
         }
-        else
-        {
-            DrawRooms();
-        }
+
+        if (!success)
+            Debug.LogError($"Unable to generate a level in {MAX_TRIES} attempts.");
     }
+
 
     bool RunWFC()
     {
@@ -95,8 +115,10 @@ public class Task2Generator : MonoBehaviour
                     }
 
                     GameObject room = Instantiate(roomPrefab.gameObject);
-                    // space rooms by multiplying grid indices by globalCellSize
                     room.transform.position = new Vector3(x * globalCellSize.x, y * globalCellSize.y, z * globalCellSize.z);
+
+                    spawnedRooms.Add(room);
+
                 }
             }
         }
@@ -246,38 +268,46 @@ public class Task2Generator : MonoBehaviour
         }
     }
 
-    // retrieve the size of the prefab using its renderer or collider
+    void ClearSpawnedRooms()
+    {
+        foreach (var go in spawnedRooms)
+            if (go) Destroy(go);
+
+        spawnedRooms.Clear();
+    }
+
+
+
+    // retrieve the size of the prefab using its renderer
     Vector3 GetPrefabSize(RoomPiece roomPiece)
     {
-        if (_prefabSizeCache.ContainsKey(roomPiece))
-        {
-            return _prefabSizeCache[roomPiece];
-        }
+        if (_prefabSizeCache.TryGetValue(roomPiece, out var cached))
+            return cached;
 
         GameObject temp = Instantiate(roomPiece.gameObject);
-        temp.SetActive(false);
+        temp.SetActive(false);                         // keep it inactive if you like
 
-        Vector3 size = Vector3.zero;
-        Renderer rend = temp.GetComponentInChildren<Renderer>();
-        if (rend != null)
+        //NEW: collect every renderer in the prefab, even if inactive
+        Renderer[] rends = temp.GetComponentsInChildren<Renderer>(true);
+
+        Vector3 size;
+        if (rends.Length > 0)
         {
-            size = rend.bounds.size;
+            // If there are several mesh renderers, encapsulate them into one bounds
+            Bounds combined = rends[0].bounds;
+            for (int i = 1; i < rends.Length; i++)
+                combined.Encapsulate(rends[i].bounds);
+            size = combined.size;
         }
         else
         {
-            Collider col = temp.GetComponentInChildren<Collider>();
-            if (col != null)
-            {
-                size = col.bounds.size;
-            }
-            else
-            {
-                size = Vector3.one;
-            }
+            Debug.LogWarning($"No Renderer found on prefab {roomPiece.name}; using (1,1,1).");
+            size = Vector3.one;                        // graceful fallback
         }
 
         Destroy(temp);
         _prefabSizeCache[roomPiece] = size;
         return size;
     }
+
 }

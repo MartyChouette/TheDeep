@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7074682094628644670}
   - component: {fileID: 3822924381266622915}
   - component: {fileID: 8520179428246274974}
+  - component: {fileID: 4474061549815011045}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -50,9 +51,10 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 15
+  detectionRadius: 11
   moveSpeed: 5
   rb: {fileID: 0}
+  currentSceneName: 
 --- !u!54 &8520179428246274974
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -80,6 +82,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &4474061549815011045
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4326837690440910383}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5753028759253155781
 GameObject:
   m_ObjectHideFlags: 0

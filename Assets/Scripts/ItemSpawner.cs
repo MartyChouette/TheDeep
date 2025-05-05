@@ -10,7 +10,7 @@ public class ItemSpawner : MonoBehaviour
     {
         TryDeleteSelf();
     }
-    void Start()       // or OnEnable() if the object can be toggled
+    void Start()      
     {
        
     }

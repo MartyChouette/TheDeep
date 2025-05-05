@@ -4439,7 +4439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c62299004b436c48848c1a250fedb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _leftConnector: 0
+  _leftConnector: 1
   _rightConnector: 0
   _upConnector: 1
   _downConnector: 1
