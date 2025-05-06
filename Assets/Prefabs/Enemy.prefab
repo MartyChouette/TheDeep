@@ -51,8 +51,8 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 11
-  moveSpeed: 5
+  detectionRadius: 6
+  moveSpeed: 3
   rb: {fileID: 8520179428246274974}
   currentSceneName: 
 --- !u!54 &8520179428246274974

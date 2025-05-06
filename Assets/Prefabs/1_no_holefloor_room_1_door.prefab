@@ -2410,8 +2410,8 @@ MonoBehaviour:
   _rightConnector: 1
   _upConnector: 1
   _downConnector: 1
-  _frontConnector: 0
-  _backConnector: 1
+  _frontConnector: 1
+  _backConnector: 0
 --- !u!1 &4700487646282237883 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -642451929503139416, guid: cec76fd3bc5de1145a4d7bbcd55d125f, type: 3}
