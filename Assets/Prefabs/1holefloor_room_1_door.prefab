@@ -520,80 +520,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1448922886115503435, guid: 79a768f9a8353384797ffed1056f340b, type: 3}
   m_PrefabInstance: {fileID: 1254367081752493891}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1299860077689497721
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2505931073766278820}
-    m_Modifications:
-    - target: {fileID: 2692356285522226072, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_Name
-      value: stairs_4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5737847
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.232801
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146034
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
---- !u!4 &4331614778519918939 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3321118210029777186, guid: 6ae7cdd3dbbd30a4aa18c1ebf0b29e70, type: 3}
-  m_PrefabInstance: {fileID: 1299860077689497721}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1830917670893766012
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1436,9 +1362,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f176d209e0a35854e97fa8cd5b64595d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5032768027450440756}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: f176d209e0a35854e97fa8cd5b64595d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4331614778519918939}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f176d209e0a35854e97fa8cd5b64595d, type: 3}
       insertIndex: -1
