@@ -16,7 +16,7 @@ public class ObiRopeClimber : MonoBehaviour
     CharacterController cc;   
     Rigidbody rb;   
 
-    bool climbing;
+    public bool climbing;
     int particleSolverIndex;   
     float worldY;                
 
