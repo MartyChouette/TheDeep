@@ -13,6 +13,7 @@ public class PlayerAnimDriver : MonoBehaviour
 
     Animator anim;
     CharacterController cc;
+    public ObiRopeClimber obiRopeClimber;
     bool crouch;
 
     void Awake()
@@ -23,6 +24,15 @@ public class PlayerAnimDriver : MonoBehaviour
 
     void Update()
     {
+
+        if (obiRopeClimber.climbing == true)
+        {
+            anim.SetBool("Climb", true);
+        }
+        else
+        {
+            anim.SetBool("Climb", false);
+        }
         // Toggle crouch on C key press
         if (Input.GetKeyDown(KeyCode.C))
         {
